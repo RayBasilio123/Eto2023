@@ -1,0 +1,24 @@
+
+# 1D
+# lista_Formatada1= [['Tmean', 'Tmax'], [[1, 2, 3, 4], [1]], ['Eto'], [1, 2, 3, 4, 5]]
+# lista_Formatada2=  [['Tmax', 'I', 'Tmean', 'UR', 'J'], [[1], [1], [2, 1], [1], [22, 26]], ['Eto'], [1, 2, 3]]
+# 3D
+# lista_Formatada1 = [['Tmean'], [[3, 4, 5, 6, 7, 8, 9]], ['Eto'], [3, 4, 5]]
+# lista_Formatada2 = [['Tmean', 'J'], [[8, 5], [26, 6, 30, 29]], ['Eto'], [4, 3, 5, 6]]
+# # # 7D
+# lista_Formatada1 =  [['Tmean', 'Tmin'], [[7, 8, 9, 10, 11, 12], [7]], ['Eto'], [7, 8, 9]]
+# lista_Formatada2 = [['Tmean', 'J'], [[9, 7, 11], [27, 30, 23, 25, 19]], ['Eto'], [8, 11]]
+# # # 10D
+lista_Formatada1 =  [['Tmean', 'Tmin'], [[10, 11, 12, 13, 14], [10]], ['Eto'], [10, 11, 12, 13]]
+lista_Formatada2 = [['J', 'Tmean'], [[25, 17, 29, 13, 16, 28, 30, 26], [10]], ['Eto'], [10]]
+
+# print(lista_Formatada_1 ------- ,lista_Formatada1)
+# print(lista_Formatada_2 ------- ,lista_Formatada2)
+# print(ndata_Patrician,data_Patricia)
+# print('n -----------Para----' + str(x) + '----dias -------Modelo-n')
+  
+# arvores(data_Patricia,[lista_Formatada1,lista_Formatada2],Eto)
+
+# xgbs(data_Patricia,[lista_Formatada1,lista_Formatada2],Eto)
+
+florestasAleatorias(data_Patricia,[lista_Formatada1,lista_Formatada2],Eto)

@@ -1,0 +1,20 @@
+#Manaus
+# -----------Para----1----dias --------
+# lista_Formatada_1=  [['umi_rel', 'umi_min', 'temp_media', 'temp_max', 'radiacao', 'umi_max', 'temp_min'], [[1, 2], [1], [1], [1], [1], [1], [1]], ['Eto'], [1, 2]]
+# lista_Formatada_2=  [['umi_min', 'umi_rel', 'temp_max', 'temp_media', 'radiacao', 'vento', 'umi_max'], [[1], [1, 16], [1], [2, 1], [1], [1], [1]], ['Eto'], [1]]
+#  -----------Para----3----dias --------
+# lista_Formatada_1=  [['umi_rel'], [[3, 13, 9, 8, 4, 12, 14, 7, 10]], ['Eto'], [3]]
+# lista_Formatada_2=  [['J', 'umi_min'], [[4, 5, 19, 15, 6, 13, 7, 21], [4]], ['Eto'], [13]]
+#  -----------Para----7----dias --------
+# lista_Formatada_1=  [['umi_rel'], [[13, 9, 8, 12, 14, 7, 10, 11]], ['Eto'], [13, 8]]
+# lista_Formatada_2=  [['temp_max', 'J', 'umi_rel', 'umi_min'], [[8], [13, 14, 16, 9, 27, 10], [9, 13], [16]], [], []]
+#  -----------Para----10----dias --------
+lista_Formatada_1=  [['umi_rel'], [[13, 12, 14, 10, 11, 15, 16, 17]], ['Eto'], [13, 14]]
+lista_Formatada_2=  [['J', 'umi_min'], [[21, 14, 30, 12, 11, 23, 24, 16, 15], [13]], [], []]
+
+ 
+# arvores(data_Pampulha,[lista_Formatada_1,lista_Formatada_2],"Eto")
+
+# xgbs(data_Pampulha,[lista_Formatada_1,lista_Formatada_2],"Eto")
+
+florestasAleatorias(data_Pampulha,[lista_Formatada_1,lista_Formatada_2],"Eto")

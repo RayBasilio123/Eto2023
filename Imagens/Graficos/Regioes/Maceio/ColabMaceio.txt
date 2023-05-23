@@ -1,0 +1,170 @@
+Maceio
+-----------Para----1----dias --------
+lista_Formatada_1=  [['umi_rel', 'radiacao', 'vento', 'temp_max', 'temp_media'], [[1], [1], [1], [1], [1]], ['Eto'], [1, 2, 3, 4, 5]]
+lista_Formatada_2=  [['radiacao', 'umi_min', 'umi_rel', 'J', 'temp_max'], [[1], [1], [1], [28], [1]], ['Eto'], [1, 2, 4, 5, 3]]
+ -----------Para----3----dias --------
+lista_Formatada_1=  [[], [], ['Eto'], [3, 4, 5, 6, 7, 9, 10, 8, 11, 12]]
+lista_Formatada_2=  [['J', 'radiacao'], [[28, 25, 27, 19], [4]], ['Eto'], [3, 6, 11, 4, 8]]
+ -----------Para----7----dias --------
+lista_Formatada_1=  [[], [], ['Eto'], [7, 9, 10, 8, 11, 12, 13, 14, 15, 21]]
+lista_Formatada_2=  [['J'], [[27, 21, 19, 9]], ['Eto'], [13, 7, 11, 12, 8, 14]]
+lista_Formatada_3=  [['vento', 'radiacao', 'temp_max', 'temp_min', 'umi_max', 'umi_min', 'umi_rel', 'press_atm', 'temp_media', 'J'], [[7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]], ['Eto'], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]]
+ -----------Para----10----dias --------
+lista_Formatada_1=  [[], [], ['Eto'], [10, 11, 12, 13, 14, 15, 21, 23, 19, 22]]
+lista_Formatada_2=  [['J'], [[27, 24, 30, 26, 28, 29, 14]], ['Eto'], [11, 13, 15]]
+ ---------------------------------------------
+
+Arvore
+1D
+0 Best_hyperparameter_Arvore {'max_depth': 3, 'max_features': 'auto', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_weight_fraction_leaf': 0.1, 'splitter': 'best'}
+1 Best_hyperparameter_Arvore {'max_depth': 3, 'max_features': 'auto', 'max_leaf_nodes': 10, 'min_samples_leaf': 1, 'min_weight_fraction_leaf': 0.1, 'splitter': 'best'}
+3D
+0 Best_hyperparameter_Arvore {'max_depth': 5, 'max_features': 'auto', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_weight_fraction_leaf': 0.1, 'splitter': 'best'}
+1 Best_hyperparameter_Arvore {'max_depth': 5, 'max_features': 'auto', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_weight_fraction_leaf': 0.1, 'splitter': 'best'}
+7D
+0 Best_hyperparameter_Arvore {'max_depth': 5, 'max_features': 'log2', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_weight_fraction_leaf': 0.1, 'splitter': 'best'}
+1 Best_hyperparameter_Arvore {'max_depth': 5, 'max_features': 'log2', 'max_leaf_nodes': 10, 'min_samples_leaf': 1, 'min_weight_fraction_leaf': 0.1, 'splitter': 'best'}
+10D
+0 Best_hyperparameter_Arvore {'max_depth': 5, 'max_features': 'auto', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_weight_fraction_leaf': 0.1, 'splitter': 'best'}
+1 Best_hyperparameter_Arvore {'max_depth': 3, 'max_features': 'auto', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_weight_fraction_leaf': 0.1, 'splitter': 'random'}
+
+Resultados Arvore
+
+1D   
+                                           lista                  lista_lags    Eto      lags_Target  rmse   mae
+0  [umi_rel, radiacao, vento, temp_max, temp_media]   [[1], [1], [1], [1], [1]]  [Eto]  [1, 2, 3, 4, 5]  0.82  0.63
+1         [radiacao, umi_min, umi_rel, J, temp_max]  [[1], [1], [1], [28], [1]]  [Eto]  [1, 2, 4, 5, 3]  0.82  0.63
+std_mse 0.53
+Erro medio absoluto---- 0.63
+std_mse 0.53
+Erro medio absoluto---- 0.63
+
+3D
+           lista               lista_lags    Eto                        lags_Target  rmse   mae
+0             []                       []  [Eto]  [3, 4, 5, 6, 7, 9, 10, 8, 11, 12]  0.95  0.73
+1  [J, radiacao]  [[28, 25, 27, 19], [4]]  [Eto]                   [3, 6, 11, 4, 8]  0.96  0.73
+std_mse 0.61
+Erro medio absoluto---- 0.73
+std_mse 0.63
+Erro medio absoluto---- 0.73
+
+7D
+  lista         lista_lags    Eto                            lags_Target  rmse   mae
+0    []                 []  [Eto]  [7, 9, 10, 8, 11, 12, 13, 14, 15, 21]  0.98  0.75
+1   [J]  [[27, 21, 19, 9]]  [Eto]                 [13, 7, 11, 12, 8, 14]  1.03  0.79
+std_mse 0.64
+Erro medio absoluto---- 0.75
+std_mse 0.67
+Erro medio absoluto---- 0.79
+
+10D
+
+  lista                      lista_lags    Eto                               lags_Target  rmse   mae
+0    []                              []  [Eto]  [10, 11, 12, 13, 14, 15, 21, 23, 19, 22]  1.01  0.77
+1   [J]  [[27, 24, 30, 26, 28, 29, 14]]  [Eto]                              [11, 13, 15]  1.23  0.92
+
+std_mse 0.65
+Erro medio absoluto---- 0.77
+std_mse 0.81
+Erro medio absoluto---- 0.92
+Xgboost
+1D
+0 Best_hyperparameter_Xgb {'colsample_bytree': 1.0, 'gamma': 0.5, 'learning_rate': 0.05, 'max_depth': 3, 'min_child_weight': 5, 'subsample': 0.8}
+1 Best_hyperparameter_Xgb {'colsample_bytree': 1.0, 'gamma': 1.5, 'learning_rate': 0.05, 'max_depth': 3, 'min_child_weight': 10, 'subsample': 0.6}
+3D
+0 Best_hyperparameter_Xgb {'colsample_bytree': 0.8, 'gamma': 5, 'learning_rate': 0.05, 'max_depth': 5, 'min_child_weight': 10, 'subsample': 0.6}
+1 Best_hyperparameter_Xgb {'colsample_bytree': 0.8, 'gamma': 5, 'learning_rate': 0.07, 'max_depth': 3, 'min_child_weight': 5, 'subsample': 0.6}
+7D
+0 Best_hyperparameter_Xgb {'colsample_bytree': 0.6, 'gamma': 5, 'learning_rate': 0.07, 'max_depth': 3, 'min_child_weight': 5, 'subsample': 0.6}
+1 Best_hyperparameter_Xgb {'colsample_bytree': 1.0, 'gamma': 5, 'learning_rate': 0.05, 'max_depth': 3, 'min_child_weight': 5, 'subsample': 0.8}
+10D
+0 Best_hyperparameter_Xgb {'colsample_bytree': 0.8, 'gamma': 5, 'learning_rate': 0.05, 'max_depth': 3, 'min_child_weight': 1, 'subsample': 0.6}
+1 Best_hyperparameter_Xgb {'colsample_bytree': 0.8, 'gamma': 5, 'learning_rate': 0.07, 'max_depth': 6, 'min_child_weight': 5, 'subsample': 0.8}
+
+Resultado
+
+1D
+                                              lista                  lista_lags    Eto      lags_Target  rmse   mae
+0  [umi_rel, radiacao, vento, temp_max, temp_media]   [[1], [1], [1], [1], [1]]  [Eto]  [1, 2, 3, 4, 5]  0.82  0.61
+1         [radiacao, umi_min, umi_rel, J, temp_max]  [[1], [1], [1], [28], [1]]  [Eto]  [1, 2, 4, 5, 3]  0.76  0.58
+std_mse 0.54
+Erro medio absoluto---- 0.61
+std_mse 0.5
+Erro medio absoluto---- 0.58
+3D
+           lista               lista_lags    Eto                        lags_Target  rmse   mae
+0             []                       []  [Eto]  [3, 4, 5, 6, 7, 9, 10, 8, 11, 12]  0.86  0.65
+1  [J, radiacao]  [[28, 25, 27, 19], [4]]  [Eto]                   [3, 6, 11, 4, 8]  0.88  0.66
+std_mse 0.56
+Erro medio absoluto---- 0.65
+std_mse 0.58
+Erro medio absoluto---- 0.66
+7D
+  lista         lista_lags    Eto                            lags_Target  rmse   mae
+0    []                 []  [Eto]  [7, 9, 10, 8, 11, 12, 13, 14, 15, 21]  0.96  0.71
+1   [J]  [[27, 21, 19, 9]]  [Eto]                 [13, 7, 11, 12, 8, 14]  1.02  0.76
+
+std_mse 0.65
+Erro medio absoluto---- 0.71
+std_mse 0.69
+Erro medio absoluto---- 0.76
+
+10D
+  lista                      lista_lags    Eto                               lags_Target  rmse   mae
+0    []                              []  [Eto]  [10, 11, 12, 13, 14, 15, 21, 23, 19, 22]   1.0  0.74
+1   [J]  [[27, 24, 30, 26, 28, 29, 14]]  [Eto]                              [11, 13, 15]  1.05  0.78
+std_mse 0.68
+Erro medio absoluto---- 0.74
+std_mse 0.7
+Erro medio absoluto---- 0.78
+
+Floresta
+1D
+0 Best_hyperparameter_Arvore {'bootstrap': True, 'max_depth': 10, 'max_features': 2, 'min_samples_leaf': 3, 'min_samples_split': 2, 'n_estimators': 1000}
+1 Best_hyperparameter_Arvore {'bootstrap': True, 'max_depth': 10, 'max_features': 5, 'min_samples_leaf': 5, 'min_samples_split': 12, 'n_estimators': 300}
+3D
+0 Best_hyperparameter_Arvore {'bootstrap': True, 'max_depth': 80, 'max_features': 2, 'min_samples_leaf': 5, 'min_samples_split': 2, 'n_estimators': 300}
+1 Best_hyperparameter_Arvore {'bootstrap': True, 'max_depth': 10, 'max_features': 2, 'min_samples_leaf': 5, 'min_samples_split': 12, 'n_estimators': 300}
+7D
+0 Best_hyperparameter_Arvore {'bootstrap': True, 'max_depth': 80, 'max_features': 2, 'min_samples_leaf': 5, 'min_samples_split': 12, 'n_estimators': 300}
+1 Best_hyperparameter_Arvore {'bootstrap': True, 'max_depth': 10, 'max_features': 2, 'min_samples_leaf': 5, 'min_samples_split': 12, 'n_estimators': 300}
+10D
+0 Best_hyperparameter_Arvore {'bootstrap': True, 'max_depth': 10, 'max_features': 2, 'min_samples_leaf': 5, 'min_samples_split': 12, 'n_estimators': 1000}
+1 Best_hyperparameter_Arvore {'bootstrap': True, 'max_depth': 10, 'max_features': 2, 'min_samples_leaf': 5, 'min_samples_split': 12, 'n_estimators': 1000}
+
+
+Resultado
+
+1D
+                                              lista                  lista_lags    Eto         lags_eto  rmse   mae
+0  [umi_rel, radiacao, vento, temp_max, temp_media]   [[1], [1], [1], [1], [1]]  [Eto]  [1, 2, 3, 4, 5]  0.78  0.59
+1         [radiacao, umi_min, umi_rel, J, temp_max]  [[1], [1], [1], [28], [1]]  [Eto]  [1, 2, 4, 5, 3]  0.72  0.56
+std_mse 0.51
+Erro medio absoluto---- 0.59
+std_mse 0.46
+Erro medio absoluto---- 0.56
+3D
+           lista               lista_lags    Eto                           lags_eto  rmse   mae
+0             []                       []  [Eto]  [3, 4, 5, 6, 7, 9, 10, 8, 11, 12]  0.85  0.65
+1  [J, radiacao]  [[28, 25, 27, 19], [4]]  [Eto]                   [3, 6, 11, 4, 8]  0.94   0.7
+std_mse 0.55
+Erro medio absoluto---- 0.65
+std_mse 0.62
+Erro medio absoluto---- 0.7
+7D
+  lista         lista_lags    Eto                               lags_eto  rmse   mae
+0    []                 []  [Eto]  [7, 9, 10, 8, 11, 12, 13, 14, 15, 21]  0.95   0.7
+1   [J]  [[27, 21, 19, 9]]  [Eto]                 [13, 7, 11, 12, 8, 14]  1.04  0.77
+
+std_mse 0.63
+Erro medio absoluto---- 0.7
+std_mse 0.7
+Erro medio absoluto---- 0.77
+10D
+  lista                      lista_lags    Eto                                  lags_eto  rmse   mae
+0    []                              []  [Eto]  [10, 11, 12, 13, 14, 15, 21, 23, 19, 22]  0.99  0.73
+1   [J]  [[27, 24, 30, 26, 28, 29, 14]]  [Eto]                              [11, 13, 15]  1.14  0.85
+std_mse 0.67
+Erro medio absoluto---- 0.73
+std_mse 0.76
+Erro medio absoluto---- 0.85

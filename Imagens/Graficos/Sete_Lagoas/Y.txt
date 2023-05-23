@@ -1,0 +1,143 @@
+
+def arvore(df,lista, lags, Eto, lags_eto,variavel_Alvo):
+  
+  x1_train, x1_test,y1_train, y1_test = train_test(df, lista,lags,Eto,lags_eto,variavel_Alvo)
+
+  # model = DecisionTreeRegressor()
+  
+  # Ajuste por grid
+  # model = DecisionTreeRegressor(random_state=42,max_depth= 5, max_features='auto', max_leaf_nodes= None, min_samples_leaf=1, min_weight_fraction_leaf= 0.1, splitter='best')
+  # 1 Dia
+  # model = DecisionTreeRegressor(random_state=42,max_depth= 5, max_features='auto', max_leaf_nodes= None, min_samples_leaf=1, min_weight_fraction_leaf= 0.1, splitter='best')
+  # 3 Dias
+  # model = DecisionTreeRegressor(random_state=42,max_depth= 5, max_features='auto', max_leaf_nodes= None, min_samples_leaf=1, min_weight_fraction_leaf= 0.1, splitter='best')
+  # model = DecisionTreeRegressor(random_state=42,max_depth= 5, max_features='auto', max_leaf_nodes= None, min_samples_leaf=1, min_weight_fraction_leaf= 0.1, splitter='best')
+  #7 Dias
+  # model = DecisionTreeRegressor(random_state=42,max_depth= 5, max_features='auto', max_leaf_nodes= 10, min_samples_leaf=1, min_weight_fraction_leaf= 0.1, splitter='best')
+  # model = DecisionTreeRegressor(random_state=42,max_depth= 5, max_features='log2', max_leaf_nodes= 10, min_samples_leaf=1, min_weight_fraction_leaf= 0.1, splitter='best')
+  #10 Dias
+  # model = DecisionTreeRegressor(random_state=42,max_depth= 5, max_features='auto', max_leaf_nodes= None, min_samples_leaf=1, min_weight_fraction_leaf= 0.1, splitter='best')
+  model = DecisionTreeRegressor(random_state=42,max_depth= 5, max_features='log2', max_leaf_nodes= 10, min_samples_leaf=1, min_weight_fraction_leaf= 0.1, splitter='best')
+  model.fit(x1_train, y1_train)                 
+  print("------------------")
+  print("Arvore")
+  y1_pred = model.predict(x1_test)
+  mse = mean_squared_error(y1_test, y1_pred)
+  std_mse=np.std(np.sqrt((y1_pred - y1_test)**2))
+  
+  print("std_mse",round(std_mse,2))
+  rmse = math.sqrt(mse)
+  print("Erro medio absoluto----",round(mean_absolute_error(y1_test, y1_pred),2))
+  mean_absolute_erro=round(mean_absolute_error(y1_test, y1_pred),2)
+  pyplot.plot(np.arange(y1_test.shape[0]),y1_test, label='Expected tree ')
+  pyplot.plot(y1_pred, label='Predicted tree')
+  pyplot.legend(bbox_to_anchor=(0,1.02,1,0.2), loc="lower left",
+                mode="expand", borderaxespad=0, ncol=3)
+  pyplot.show()
+  return lista,lags,Eto,lags_eto,round(rmse,2),mean_absolute_erro,"Arvore"
+
+def arvores(df,arvore_parametros,variavel_Alvo):
+  lista_colunas=["lista","lista_lags",variavel_Alvo,"lags_Target","rmse","mae"]
+  tb = pd.DataFrame(columns=lista_colunas)
+  print("Arvores")
+
+  for x in range(len(arvore_parametros)):
+    
+    a=arvore(df,arvore_parametros[x][0],arvore_parametros[x][1],arvore_parametros[x][2],arvore_parametros[x][3],variavel_Alvo)
+  
+    tb.loc[x,'lista']=a[0]
+    tb.loc[x,'lista_lags']=a[1]
+    tb.loc[x,variavel_Alvo]=a[2]
+    tb.loc[x,'lags_Target']=a[3]
+    tb.loc[x,"rmse"]=a[4]
+    tb.loc[x,'mae']=a[5]
+
+  print(tb)
+    
+
+  
+
+  return tb
+
+def florestaAleatoria(df,lista, lags, Eto, lags_eto,variavel_Alvo):
+  x1_train, x1_test,y1_train, y1_test = train_test(df, lista,lags,Eto,lags_eto,variavel_Alvo)
+  # tabela = get_x2(df, lista,lags,Eto,lags_eto)
+  
+  # #Quando era em porcentagem eu usava assim :
+  # # x1 = tabela[0].drop("Data", axis=1)
+  # # y1 = df[variavel_Alvo]
+
+  # # train_size = int(((len(tabela[0])) -tabela[1]) * 0.82)
+  # # x1_train, x1_test = x1[tabela[1]:train_size], x1[train_size:int(len(x1))]
+  # # y1_train, y1_test = y1[tabela[1]:train_size], y1[train_size:int(len(y1))]  
+  # selecao_treino = (tabela[0]['Data'] >= '1993') & (tabela[0]['Data'] <= '2011-12-31')
+  # selecao_teste = (tabela[0]['Data'] >= '2015-01-01') & (tabela[0]['Data'] <= '2015-12-31')
+
+  # x1_train = tabela[0][selecao_treino].drop("Data", axis=1)
+  # x1_test = tabela[0][selecao_teste].drop("Data", axis=1)
+  
+  # y1_train = df[variavel_Alvo][selecao_treino]
+  # y1_test = df[variavel_Alvo][selecao_teste]
+  # x1_train, x1_test = x1_train[tabela[1]:], x1_test
+  # y1_train, y1_test = y1_train[tabela[1]:], y1_test
+
+ 
+
+  # Ajuste manual
+  # model = RandomForestRegressor(n_estimators=1000,random_state = 42 )
+
+  # Ajuste por grid
+
+ # 1 Dia
+  # model = RandomForestRegressor(random_state = 42 ,bootstrap=True, max_depth= 10, max_features= 4,  min_samples_split= 12, n_estimators=1000)
+  # model = RandomForestRegressor(random_state = 42 ,bootstrap=True, max_depth= 10, max_features= 2, min_samples_split= 10, n_estimators=1000)
+  # 3 Dias
+  # model = RandomForestRegressor(random_state = 42 ,bootstrap=True, max_depth= 10, max_features= 4, min_samples_split= 10, n_estimators=1000)
+  # model = RandomForestRegressor(random_state = 42 ,bootstrap=True, max_depth= 4, max_features= 5,min_samples_split= 8, n_estimators=1000)
+  #7 Dias
+  # model = RandomForestRegressor(random_state = 42 ,bootstrap=True, max_depth= 10, max_features= 2, min_samples_split= 12, n_estimators=1000)
+  # model = RandomForestRegressor(random_state = 42 ,bootstrap=True, max_depth= 4, max_features= 2,  min_samples_split= 12, n_estimators=100)
+  #10 Dias
+  # model = RandomForestRegressor(random_state = 42 ,bootstrap=True, max_depth= 10, max_features= 4,  min_samples_split= 12, n_estimators=1000)
+  # model = RandomForestRegressor(random_state = 42 ,bootstrap=True, max_depth= 4, max_features= 2, min_samples_split= 2,  n_estimators=300)
+
+  model.fit(x1_train, y1_train)
+  print("------------------")
+  print("floresta")
+  y1_pred = model.predict(x1_test)
+  mse = mean_squared_error(y1_test, y1_pred)
+  std_mse=np.std(np.sqrt((y1_pred - y1_test)**2))
+  
+  print("std_mse",round(std_mse,2))
+  rmse = math.sqrt(mse)
+  mean_absolute_erro=round(mean_absolute_error(y1_test, y1_pred),2)
+  print("Erro medio absoluto----",mean_absolute_erro)
+  pyplot.plot(np.arange(y1_test.shape[0]),y1_test, label='Expected Random forests ')
+  pyplot.plot(y1_pred, label='Predicted Random forests')
+  pyplot.legend(bbox_to_anchor=(0,1.02,1,0.2), loc="lower left",
+                mode="expand", borderaxespad=0, ncol=3)
+  pyplot.show()
+    
+  return lista,lags,Eto,lags_eto,round(rmse,2),mean_absolute_erro,"RandomForestRegressor"
+
+def florestasAleatorias(df,arvore_parametros,variavel_Alvo):
+  lista_colunas=["lista","lista_lags","Eto","lags_eto","rmse","mae"]
+  tb = pd.DataFrame(columns=lista_colunas)
+  print("florestass")
+  for x in range(len(arvore_parametros)):
+    a=florestaAleatoria(df,arvore_parametros[x][0],arvore_parametros[x][1],arvore_parametros[x][2],arvore_parametros[x][3],variavel_Alvo)
+    
+    
+    tb.loc[x,'lista']=a[0]
+    tb.loc[x,'lista_lags']=a[1]
+    tb.loc[x,'Eto']=a[2]
+    tb.loc[x,'lags_eto']=a[3]
+    tb.loc[x,"rmse"]=a[4]
+    tb.loc[x,'mae']=a[5]
+   
+
+    # joblib.dump(a,"floresta")
+
+  print(tb)
+
+  return tb

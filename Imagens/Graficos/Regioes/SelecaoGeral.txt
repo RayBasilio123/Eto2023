@@ -1,0 +1,87 @@
+Horizonte - Lista
+
+Sete_Lagoas
+-----------Para----1----dias --------
+lista_Formatada_1 ------->  [['Tmean', 'Tmax'], [[1, 2, 3, 4], [1]], ['Eto'], [1, 2, 3, 4, 5]]
+lista_Formatada_2 ------->  [['Tmax', 'I', 'Tmean', 'UR', 'J'], [[1], [1], [2, 1], [1], [22, 26]], ['Eto'], [1, 2, 3]]
+-----------Para----3----dias --------
+lista_Formatada_1 ------->  [['Tmean'], [[3, 4, 5, 6, 7, 8, 9]], ['Eto'], [3, 4, 5]]
+lista_Formatada_2 ------->  [['Tmean', 'J'], [[8, 5], [26, 6, 30, 29]], ['Eto'], [4, 3, 5, 6]]
+-----------Para----7----dias --------
+lista_Formatada_1 ------->  [['Tmean', 'Tmin'], [[7, 8, 9, 10, 11, 12], [7]], ['Eto'], [7, 8, 9]]
+lista_Formatada_2 ------->  [['Tmean', 'J'], [[9, 7, 11], [27, 30, 23, 25, 19]], ['Eto'], [8, 11]]
+-----------Para----10----dias --------
+lista_Formatada_1 ------->  [['Tmean', 'Tmin'], [[10, 11, 12, 13, 14], [10]], ['Eto'], [10, 11, 12, 13]]
+lista_Formatada_2 ------->  [['J', 'Tmean'], [[25, 17, 29, 13, 16, 28, 30, 26], [10]], ['Eto'], [10]]
+
+Pampulha
+-----------Para----1----dias --------
+lista_Formatada_1 =  [['umi_rel', 'umi_max', 'radiacao', 'umi_min', 'temp_max'], [[1, 2], [1, 2], [1], [1], [1]], ['Eto'], [1, 2, 3]]
+lista_Formatada_2 =  [['radiacao', 'umi_rel', 'umi_min', 'umi_max', 'J', 'press_atm', 'vento'], [[1], [1, 2], [1], [1], [27], [1], [1]], ['Eto'], [1, 2]]
+-----------Para----3----dias --------
+lista_Formatada_1= [['umi_max', 'umi_rel', 'radiacao'], [[3, 4], [3, 4], [3]], ['Eto'], [3, 4, 5, 6, 7]]
+lista_Formatada_2 =  [['J', 'umi_rel', 'press_atm'], [[22, 29, 26, 23, 21], [3, 4], [3]], ['Eto'], [3, 4]]
+ -----------Para----7----dias --------
+lista_Formatada_1=  [[], [], ['Eto'], [7, 8, 9, 10, 11, 12, 15, 20, 21, 13]]
+lista_Formatada_2= [['J'], [[27, 19, 15, 29, 26, 20, 24, 28, 10, 22]], [], []]
+-----------Para----10----dias --------
+lista_Formatada_1 =  [[], [], ['Eto'], [10, 11, 12, 15, 20, 21, 13, 14, 16, 22]]
+lista_Formatada_2=  [['J'], [[30, 26, 25, 17, 10, 28, 19, 29, 11, 24]], [], []]
+
+Manaus
+-----------Para----1----dias --------
+lista_Formatada_1=  [['umi_rel', 'umi_min', 'temp_media', 'temp_max', 'radiacao', 'umi_max', 'temp_min'], [[1, 2], [1], [1], [1], [1], [1], [1]], ['Eto'], [1, 2]]
+lista_Formatada_2=  [['umi_min', 'umi_rel', 'temp_max', 'temp_media', 'radiacao', 'vento', 'umi_max'], [[1], [1, 16], [1], [2, 1], [1], [1], [1]], ['Eto'], [1]]
+ -----------Para----3----dias --------
+lista_Formatada_1=  [['umi_rel'], [[3, 13, 9, 8, 4, 12, 14, 7, 10]], ['Eto'], [3]]
+lista_Formatada_2=  [['J', 'umi_min'], [[4, 5, 19, 15, 6, 13, 7, 21], [4]], ['Eto'], [13]]
+ -----------Para----7----dias --------
+lista_Formatada_1=  [['umi_rel'], [[13, 9, 8, 12, 14, 7, 10, 11]], ['Eto'], [13, 8]]
+lista_Formatada_2=  [['temp_max', 'J', 'umi_rel', 'umi_min'], [[8], [13, 14, 16, 9, 27, 10], [9, 13], [16]], [], []]
+ -----------Para----10----dias --------
+lista_Formatada_1=  [['umi_rel'], [[13, 12, 14, 10, 11, 15, 16, 17]], ['Eto'], [13, 14]]
+lista_Formatada_2=  [['J', 'umi_min'], [[21, 14, 30, 12, 11, 23, 24, 16, 15], [13]], [], []]
+
+Maceio
+-----------Para----1----dias --------
+lista_Formatada_1=  [['umi_rel', 'radiacao', 'vento', 'temp_max', 'temp_media'], [[1], [1], [1], [1], [1]], ['Eto'], [1, 2, 3, 4, 5]]
+lista_Formatada_2=  [['radiacao', 'umi_min', 'umi_rel', 'J', 'temp_max'], [[1], [1], [1], [28], [1]], ['Eto'], [1, 2, 4, 5, 3]]
+ -----------Para----3----dias --------
+lista_Formatada_1=  [[], [], ['Eto'], [3, 4, 5, 6, 7, 9, 10, 8, 11, 12]]
+lista_Formatada_2=  [['J', 'radiacao'], [[28, 25, 27, 19], [4]], ['Eto'], [3, 6, 11, 4, 8]]
+ -----------Para----7----dias --------
+lista_Formatada_1=  [[], [], ['Eto'], [7, 9, 10, 8, 11, 12, 13, 14, 15, 21]]
+lista_Formatada_2=  [['J'], [[27, 21, 19, 9]], ['Eto'], [13, 7, 11, 12, 8, 14]]
+ -----------Para----10----dias --------
+lista_Formatada_1=  [[], [], ['Eto'], [10, 11, 12, 13, 14, 15, 21, 23, 19, 22]]
+lista_Formatada_2=  [['J'], [[27, 24, 30, 26, 28, 29, 14]], ['Eto'], [11, 13, 15]]
+
+Brasilia
+
+ -----------Para----1----dias --------
+lista_Formatada_1 =  [['temp_media'], [[29, 28, 30]], ['Eto'], [1, 2, 3, 4, 5, 6, 7]]
+lista_Formatada_2 =  [['temp_media', 'J', 'press_atm'], [[26, 29, 22], [5], [25]], ['Eto'], [1, 2, 3, 4, 28]]
+ -----------Para----3----dias --------
+lista_Formatada_1 =  [['temp_media'], [[29, 28, 30, 27]], ['Eto'], [3, 4, 5, 6, 7, 8]]
+lista_Formatada_2 =  [['temp_media', 'press_atm', 'J'], [[29, 30], [25, 28, 22, 24], [17]], ['Eto'], [3, 5, 4]]
+ -----------Para----7----dias --------
+lista_Formatada_1 =  [['temp_media'], [[29, 28, 30, 27, 26, 24, 25, 22]], ['Eto'], [7, 8]]
+lista_Formatada_2 =  [['temp_media', 'press_atm', 'J'], [[26, 28, 22, 21, 17, 18], [28, 29, 22], [7]], [], []]
+ -----------Para----10----dias --------
+lista_Formatada_1 =  [['temp_media'], [[29, 28, 30, 27, 26, 24, 25, 22, 23, 21]], [], []]
+lista_Formatada_2 =  [['temp_media', 'press_atm', 'temp_min', 'J'], [[28, 29, 30, 23], [30, 20], [30], [21, 13, 10]], [], []]
+
+Porto  Alegre
+
+-----------Para----1----dias --------
+lista_Formatada_1=  [['radiacao', 'temp_max', 'temp_media'], [[1], [1], [1, 5, 2, 4, 3]], ['Eto'], [1, 2, 3]]
+lista_Formatada_2=  [['radiacao', 'temp_media', 'temp_min', 'umi_min', 'umi_rel', 'temp_max'], [[1, 3], [4, 13], [3], [1], [1], [1]], ['Eto'], [1, 2]]
+ -----------Para----3----dias --------
+lista_Formatada_1=  [['temp_media'], [[5, 4, 3, 6, 7, 12, 11]], ['Eto'], [3, 4, 5]]
+lista_Formatada_2=  [['temp_media', 'radiacao', 'J', 'temp_max'], [[7, 3, 13], [3, 6], [26, 12], [3]], ['Eto'], [3, 5]]
+ ----------Para----7----dias --------
+lista_Formatada_1=  [['temp_media', 'temp_max'], [[7, 12, 11, 8, 13, 10, 9], [7]], ['Eto'], [7, 13]]
+lista_Formatada_2=  [['J', 'temp_media', 'radiacao'], [[23, 14, 22, 19], [12, 7, 11, 16, 13], [13]], [], []]
+ -----------Para----10----dias --------
+lista_Formatada_1=  [['temp_media', 'temp_min'], [[12, 11, 13, 10, 14], [12, 11]], ['Eto'], [13, 12, 10]]
+lista_Formatada_2=  [['temp_media', 'J'], [[11, 12, 16, 15], [30, 28, 24, 18, 14, 20]], [], []]

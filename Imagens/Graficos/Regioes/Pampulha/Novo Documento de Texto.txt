@@ -1,0 +1,31 @@
+url=('https://raw.githubusercontent.com/RayBasilio123/database/main/INMET/CSV/J_Database/PAMPULHA_J_2014_2020.csv')
+data_Pampulha = pd.read_csv(url, sep=",", encoding = "ISO-8859-1")
+data_Pampulha=data_Pampulha.drop(columns=['Unnamed: 0'])
+
+atributeReg = [ 'vento'	,'radiacao',	'temp_max',	'temp_min',	'umi_max',	'umi_min',	'umi_rel',	'press_atm',	'temp_media','J']
+resultadoPampulha = get_x30(data_Pampulha, atributeReg, ['Eto'])
+# print(resultadoPampulha)
+
+ 
+
+
+# Para Pampulha
+# -----------Para----1----dias --------
+# lista_Formatada_1 =  [['umi_rel', 'umi_max', 'radiacao', 'umi_min', 'temp_max'], [[1, 2], [1, 2], [1], [1], [1]], ['Eto'], [1, 2, 3]]
+# lista_Formatada_2 =  [['radiacao', 'umi_rel', 'umi_min', 'umi_max', 'J', 'press_atm', 'vento'], [[1], [1, 2], [1], [1], [27], [1], [1]], ['Eto'], [1, 2]]
+#  -----------Para----3----dias --------
+# lista_Formatada_1 =  [['umi_max', 'umi_rel', 'radiacao'], [[3, 4], [3, 4], [3]], ['Eto'], [3, 4, 5, 6, 7]]
+# lista_Formatada_2 =  [['J', 'umi_rel', 'press_atm'], [[22, 29, 26, 23, 21], [3, 4], [3]], ['Eto'], [3, 4]]
+# # -----------Para----7----dias --------
+# lista_Formatada_1 =  [[], [], ['Eto'], [7, 8, 9, 10, 11, 12, 15, 20, 21, 13]]
+# lista_Formatada_2 =  [['J'], [[27, 19, 15, 29, 26, 20, 24, 28, 10, 22]], [], []]
+#  -----------Para----10----dias --------
+lista_Formatada_1 =  [[], [], ['Eto'], [10, 11, 12, 15, 20, 21, 13, 14, 16, 22]]
+lista_Formatada_2 =  [['J'], [[30, 26, 25, 17, 10, 28, 19, 29, 11, 24]], [], []]
+
+ 
+# arvores(data_Pampulha,[lista_Formatada_1,lista_Formatada_2],"Eto")
+
+# xgbs(data_Pampulha,[lista_Formatada_1,lista_Formatada_2],"Eto")
+
+florestasAleatorias(data_Pampulha,[lista_Formatada_1,lista_Formatada_2],"Eto")

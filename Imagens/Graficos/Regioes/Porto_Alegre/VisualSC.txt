@@ -1,0 +1,30 @@
+
+
+url=('https://raw.githubusercontent.com/RayBasilio123/database/main/INMET/CSV/J_Database/PORTO_ALEGRE_J_2014_2020.csv')
+data_Pampulha = pd.read_csv(url, sep=",", encoding = "ISO-8859-1")
+data_Pampulha=data_Pampulha.drop(columns=['Unnamed: 0'])
+
+atributeReg = [ 'vento'	,'radiacao',	'temp_max',	'temp_min',	'umi_max',	'umi_min',	'umi_rel',	'press_atm',	'temp_media','J']
+resultadoPampulha = get_x30(data_Pampulha, atributeReg, ['Eto'])
+
+# -----------Para----1----dias --------
+# lista_Formatada_1=  [['radiacao', 'temp_max', 'temp_media'], [[1], [1], [1, 5, 2, 4, 3]], ['Eto'], [1, 2, 3]]
+# lista_Formatada_2=  [['radiacao', 'temp_media', 'temp_min', 'umi_min', 'umi_rel', 'temp_max'], [[1, 3], [4, 13], [3], [1], [1], [1]], ['Eto'], [1, 2]]
+#  -----------Para----3----dias --------
+# lista_Formatada_1=  [['temp_media'], [[5, 4, 3, 6, 7, 12, 11]], ['Eto'], [3, 4, 5]]
+# lista_Formatada_2=  [['temp_media', 'radiacao', 'J', 'temp_max'], [[7, 3, 13], [3, 6], [26, 12], [3]], ['Eto'], [3, 5]]
+#  ----------Para----7----dias --------
+# lista_Formatada_1=  [['temp_media', 'temp_max'], [[7, 12, 11, 8, 13, 10, 9], [7]], ['Eto'], [7, 13]]
+# lista_Formatada_2=  [['J', 'temp_media', 'radiacao'], [[23, 14, 22, 19], [12, 7, 11, 16, 13], [13]], [], []]
+#  -----------Para----10----dias --------
+lista_Formatada_1=  [['temp_media', 'temp_min'], [[12, 11, 13, 10, 14], [12, 11]], ['Eto'], [13, 12, 10]]
+lista_Formatada_2=  [['temp_media', 'J'], [[11, 12, 16, 15], [30, 28, 24, 18, 14, 20]], [], []]
+ 
+
+
+ 
+# arvores(data_Pampulha,[lista_Formatada_1,lista_Formatada_2],"Eto")
+
+# xgbs(data_Pampulha,[lista_Formatada_1,lista_Formatada_2],"Eto")
+
+florestasAleatorias(data_Pampulha,[lista_Formatada_1,lista_Formatada_2],"Eto")

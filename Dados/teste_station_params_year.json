@@ -1,0 +1,78 @@
+{
+  "station_data": {
+    "SETE_LAGOAS_2012": {
+      "atributo_list": {
+        "1": [
+          [["Tmean"], [ [1]], ["Eto"], [1]],
+           [["Tmean"], [ [1]], ["Eto"], [1]]
+        ],
+        "3": [
+           [["Tmean"], [ [3]], ["Eto"], [3]],
+           [["Tmean"], [ [3]], ["Eto"], [3]]
+        ],
+        "7": [
+          [["Tmean"], [ [7]], ["Eto"], [7]],
+           [["Tmean"], [ [7]], ["Eto"], [7]]
+        ],
+        "10": [
+          [["Tmean"], [ [10]], ["Eto"], [10]],
+           [["Tmean"], [ [10]], ["Eto"], [10]]
+        ]
+      },
+      "model_params_arvores": {
+        "params_list_1": [
+          {"max_depth": 1, "max_features": "auto", "max_leaf_nodes": null, "min_samples_leaf": 1, "min_weight_fraction_leaf": 0.1, "splitter": "best"},
+          {"max_depth": 1, "max_features": "auto", "max_leaf_nodes": null, "min_samples_leaf": 1, "min_weight_fraction_leaf": 0.1, "splitter": "best"}
+        ],
+        "params_list_3": [
+          {"max_depth": 3, "max_features": "auto", "max_leaf_nodes": null, "min_samples_leaf": 1, "min_weight_fraction_leaf": 0.1, "splitter": "best"},
+          {"max_depth": 3, "max_features": "auto", "max_leaf_nodes": null, "min_samples_leaf": 1, "min_weight_fraction_leaf": 0.1, "splitter": "best"}
+        ],
+        "params_list_7": [
+          {"max_depth": 7, "max_features": "auto", "max_leaf_nodes": 10, "min_samples_leaf": 1, "min_weight_fraction_leaf": 0.1, "splitter": "best"},
+          {"max_depth": 7, "max_features": "auto", "max_leaf_nodes": 10, "min_samples_leaf": 1, "min_weight_fraction_leaf": 0.1, "splitter": "best"}
+        ],
+        "params_list_10": [
+          {"max_depth": 10, "max_features": "auto", "max_leaf_nodes": null, "min_samples_leaf": 1, "min_weight_fraction_leaf": 0.1, "splitter": "best"},
+          {"max_depth": 10, "max_features": "auto", "max_leaf_nodes": null, "min_samples_leaf": 1, "min_weight_fraction_leaf": 0.1, "splitter": "random"}
+        ]
+      },
+      "model_params_xgb": {
+        "params_list_1": [
+          {"colsample_bytree": 1.0, "gamma": 1, "learning_rate": 0.07, "max_depth": 3, "min_child_weight": 5, "subsample": 0.8},
+          {"colsample_bytree": 0.6, "gamma": 1, "learning_rate": 0.07, "max_depth": 4, "min_child_weight": 1, "subsample": 0.8}
+        ],
+        "params_list_3": [
+          {"colsample_bytree": 1.0, "gamma": 3, "learning_rate": 0.05, "max_depth": 3, "min_child_weight": 5, "subsample": 0.8},
+          {"colsample_bytree": 0.6, "gamma": 3, "learning_rate": 0.05, "max_depth": 3, "min_child_weight": 5, "subsample": 0.8}
+        ],
+        "params_list_7": [
+          {"colsample_bytree": 1.0, "gamma": 7, "learning_rate": 0.07, "max_depth": 4, "min_child_weight": 1, "subsample": 1.0},
+          {"colsample_bytree": 0.6, "gamma": 7, "learning_rate": 0.05, "max_depth": 3, "min_child_weight": 10, "subsample": 0.6}
+        ],
+        "params_list_10": [
+          {"colsample_bytree": 0.6, "gamma": 10, "learning_rate": 0.05, "max_depth": 4, "min_child_weight": 10, "subsample": 0.8},
+          {"colsample_bytree": 0.8, "gamma": 10, "learning_rate": 0.07, "max_depth": 3, "min_child_weight": 1, "subsample": 1.0}
+        ]
+      },
+      "model_params_florestasAleatorias": {
+        "params_list_1": [
+          {"bootstrap": true, "max_depth": 1, "max_features": 4, "min_samples_split": 12, "n_estimators": 1000},
+          {"bootstrap": true, "max_depth": 1, "max_features": 2, "min_samples_split": 10, "n_estimators": 1000}
+        ],
+        "params_list_3": [
+          {"bootstrap": true, "max_depth": 3, "max_features": 4, "min_samples_split": 10, "n_estimators": 1000},
+          {"bootstrap": true, "max_depth": 3, "max_features": 5, "min_samples_split": 8, "n_estimators": 1000}
+        ],
+        "params_list_7": [
+          {"bootstrap": true, "max_depth": 7, "max_features": 2, "min_samples_split": 12, "n_estimators": 1000},
+          {"bootstrap": true, "max_depth": 7, "max_features": 2, "min_samples_split": 12, "n_estimators": 100}
+        ],
+        "params_list_10": [
+          {"bootstrap": true, "max_depth": 10, "max_features": 4, "min_samples_split": 12, "n_estimators": 1000},
+          {"bootstrap": true, "max_depth": 10, "max_features": 2, "min_samples_split": 2, "n_estimators": 300}
+        ]
+      }
+    }
+  }
+}
