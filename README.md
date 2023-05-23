@@ -2,7 +2,7 @@
 
 
 
-![ imagem qualquer ](Eto.png)
+![ imagem ](Eto.png)
 ## 💻 Sobre o projeto
 :smiley: Este é o arquivo principal (Eto_main.py) para executar o projeto Eto. O projeto é responsável por calcular a evapotranspiração de referência (Eto) com base em modelos e horizontes de previsão.
 
