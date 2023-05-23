@@ -6,7 +6,7 @@ import warnings
 # warnings.filterwarnings("ignore")
 horizons = [1, 3, 7, 10]
 model_names =["arvores","xgb","florestasAleatorias"]
-path= '/home/ray/PycharmProjects/pythonProject1/ETo/2020_Ic/Dados/'
+path= '/home/ray/PycharmProjects/Eto2023/Dados/'
 
 station_name ='PORTO_ALEGRE'
 url=(f'https://raw.githubusercontent.com/RayBasilio123/database/main/INMET/CSV/J_Database/{station_name}_J_2014_2020.csv')
@@ -57,7 +57,7 @@ for code_execution in range(10):
 #                                    path+"tabela_geral_ano.csv", code_execution + 1)
 # ano_teste = f'2012'
 # station_name = f"SETE_LAGOAS_{ano_teste}"
-# url=("/home/ray/PycharmProjects/pythonProject1/ETo/2020_Ic/Dados/SETE_LAGOAS.csv")
+# url=(path+ "/SETE_LAGOAS.csv")
 # dataframe = pd.read_csv(url, sep=",", encoding = "ISO-8859-1")
 # dataframe=dataframe.drop(columns=['Unnamed: 0'])
 #
