@@ -1,10 +1,10 @@
-# Estudo sobre previsão de evapotranspiração de referência
+# 🌱  Estudo sobre previsão de evapotranspiração de referência
 
 
 
 ![ imagem ](Eto.png)
 ## 💻 Sobre o projeto
-:smiley: Este é o arquivo principal (Eto_main.py) para executar o projeto Eto. O projeto é responsável por calcular a evapotranspiração de referência (Eto) com base em modelos e horizontes de previsão.
+Este é o arquivo principal (Eto_main.py) para executar o projeto Eto. O projeto é responsável por calcular a evapotranspiração de referência (Eto) com base em modelos e horizontes de previsão.
 
 
 ## Pré-requisitos
