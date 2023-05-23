@@ -17,7 +17,7 @@ Configuração do ambiente
 
     Opcionalmente, crie uma virtualenv para isolar o ambiente de desenvolvimento. Para fazer isso, execute o seguinte comando:
 
-python3 -m venv venv
+        python3 -m venv venv
 
 Isso criará um ambiente virtual chamado "venv".
 
@@ -25,13 +25,12 @@ Ative a virtualenv. Dependendo do seu sistema operacional, o comando pode variar
 
     No Windows:
 
-venv\Scripts\activate
+        venv\Scripts\activate
 
 No macOS e Linux:
 
-bash
-
-    source venv/bin/activate
+    bash
+        source venv/bin/activate
 
 Instale as dependências do projeto executando o seguinte comando:
 
@@ -49,7 +48,7 @@ Após essa configuração inicial, o código executa uma série de iterações e
 
 Para executar o aplicativo, certifique-se de atualizar as variáveis de acordo com sua configuração. Em seguida, execute o seguinte comando:
 
-python Eto_main.py
+    python Eto_main.py
 
 Isso executará o aplicativo e os modelos serão executados e os resultados serão salvos em arquivos CSV.
 Considerações finais
