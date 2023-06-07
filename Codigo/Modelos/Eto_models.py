@@ -41,7 +41,7 @@ def train_test(df, lista, lags, Eto, lags_eto, variavel_Alvo, data_Itreino, data
     # print(y1_test.shape,"y1_test")
     # print("*****************asddfg******************")
 
-    return x1_train.values, x1_test.values, y1_train, y1_test
+    return x1_train.values, x1_test.values, y1_train.values, y1_test.values
 
 
 def train_model(model_class, model_params, df, lista, lags, Eto, lags_eto, variavel_Alvo, data_Itreino, data_Ftreino,
