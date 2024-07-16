@@ -22,7 +22,7 @@ def get_x2(df,lista,lags,Eto,lags_eto):
   eta_nois = pd.DataFrame()
   eta_nois['Data']=df['Data']
   for coluna in lista:
-    data[coluna] = df[coluna]       
+    data[coluna] = df[coluna]
 
   for i in range(len(lags)):
     for j in range(len(lags[i])):
@@ -32,8 +32,8 @@ def get_x2(df,lista,lags,Eto,lags_eto):
           max_lag=(lags[i][j])
         del lista_aux[len(lista_aux)-1]
         lista_aux.insert(0,nan)
-      eta_nois[((data.iloc[:,i]).name)+("_t-")+str(lags[i][j])]=(lista_aux)  
-  
+      eta_nois[((data.iloc[:,i]).name)+("_t-")+str(lags[i][j])]=(lista_aux)
+
   for i in range(len(lags_eto)):
     lista_aux2=df[Eto].iloc[:,0].tolist()
     for displacement in range((lags_eto[i])):
@@ -41,7 +41,7 @@ def get_x2(df,lista,lags,Eto,lags_eto):
         max_lag=(lags_eto[i])
       del lista_aux2[len(lista_aux2)-1]
       lista_aux2.insert(0,nan)
-    eta_nois[((df[Eto].iloc[:,0]).name)+("_t-")+str(lags_eto[i])]=lista_aux2        
+    eta_nois[((df[Eto].iloc[:,0]).name)+("_t-")+str(lags_eto[i])]=lista_aux2
   return eta_nois,max_lag,lista,lags,Eto,lags_eto;
 
 
